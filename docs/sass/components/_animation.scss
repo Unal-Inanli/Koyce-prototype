@@ -1,0 +1,78 @@
+.animation {
+
+    &-enter {
+       
+        animation-name: fadeIn;
+        animation-fill-mode: forwards;
+        animation-duration: 1.5s;
+
+        &-left {
+ 
+            animation-name: enterLeft;
+            animation-fill-mode: forwards;
+            animation-duration: 2s;
+        }
+
+        &-right {
+ 
+            animation-name: enterRight;
+            animation-fill-mode: forwards;
+            animation-duration: 2s;
+        }
+    }
+
+    &-underline {
+        animation-name: underline;
+        animation-fill-mode: forwards;
+        animation-duration: 0.6s;
+        
+    }
+
+    
+}
+
+
+@keyframes fadeIn {
+
+    from {
+      opacity: 0;
+    }
+
+    to {
+       opacity: 1;
+    }
+}
+
+@keyframes enterLeft {
+   from {
+       opacity: 0;
+       transform: translateX(-100%);
+   }
+
+   to {
+       opacity: 1;
+       transform: translateX(0%);
+   }
+}
+
+@keyframes enterRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+ 
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes underline {
+    from {
+       max-width: 0;
+    }
+
+    to {
+       max-width: 100%;
+    }
+}

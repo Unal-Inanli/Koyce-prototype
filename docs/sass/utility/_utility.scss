@@ -1,0 +1,39 @@
+.flex {
+    display:flex;
+    
+    &-row {
+        flex-flow: row;
+    }
+
+    &-j-center {
+        justify-content: center;
+    }
+
+    &-end {
+        justify-content: end;
+    }
+
+    &-col {
+        flex-flow: column;
+    }
+
+    &-a-center {
+        align-items: center;
+    }
+
+    &-j-between {
+        justify-content: space-between;
+    }
+}
+
+.spacing {
+    &-m-t-5 {
+       margin-top: 5rem;
+    }
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}

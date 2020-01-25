@@ -1,0 +1,72 @@
+.logo {
+    width: 150px;
+    height: auto;
+    position: relative;
+    
+    &-container {
+
+    }
+
+    &-center {
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        animation-name: logoEnter;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    
+    &-initial {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+
+    }
+
+    &-visible {
+
+        @include for-desktop {
+            opacity: 0;
+            animation-name: logoEnter;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+       
+
+    }
+
+
+    &-invisible {
+
+        @include for-desktop {
+            opacity: 1;
+            animation-name: logoLeave;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+        
+
+    }
+}
+
+@keyframes logoEnter {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes logoLeave {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

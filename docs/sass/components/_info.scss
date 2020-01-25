@@ -1,0 +1,72 @@
+.info {
+
+    @include for-tablet {
+       display: flex;
+       flex-flow: row wrap;
+    }
+
+
+    &-block {
+       padding: 0rem 2rem;
+       padding-bottom: 1rem;
+       width: 100%;
+
+       @include for-tablet {
+           width: 50%;
+        
+       }
+    }
+   
+    &-title {
+       margin-bottom: 0.7rem;
+    } 
+
+    &-underline {
+        border: 1px solid #4D4D4D;
+        width: 2rem;
+    }
+
+    &-title-with-underline {
+      margin-bottom: 0.7rem;
+    }
+    
+    &-list {
+     
+        margin-top: 1rem;
+
+        &-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;    
+    }
+        
+        &-name {
+          width: 65%;
+        }
+
+        &-link {
+           width: 35%;
+           display: flex;
+           flex-flow: row nowrap;
+          
+        }
+
+        &-icon {
+            margin: 0rem 0.2rem;
+
+            @include for-medium-phone {
+                margin: 0rem 0.3rem;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+
+                @include for-medium-phone {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+}

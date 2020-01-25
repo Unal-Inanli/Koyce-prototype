@@ -1,0 +1,20 @@
+.footer {
+
+    &-acknowlegdment {
+        margin-top: 5rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+
+        &-link {
+            color: green;
+        }
+        
+        span {
+            width: 50%;
+            font-size:0.8rem;
+            text-align: center;
+        }
+    }
+}
