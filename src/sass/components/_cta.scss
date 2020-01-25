@@ -1,0 +1,55 @@
+.cta {
+    width:32px;
+    height: auto;
+    position: absolute;
+    top:70%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: ctaJump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    z-index: 99;
+   
+
+    img {
+        width:100%;
+        position: relative;
+    }
+
+    &-dissapear {
+        
+        animation-name: ctaDissapear;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: unset;
+    }
+}
+
+@keyframes ctaJump{
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        top: 75%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 70%;
+        opacity: 0;
+    }
+
+}
+
+
+@keyframes ctaDissapear {
+
+    from {
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+    }
+}

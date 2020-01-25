@@ -1,0 +1,24 @@
+.header {
+    position: relative;
+    z-index: 2;
+    
+    &-reveal {
+      animation-name: revealHeader;
+      animation-duration: 0.4s;
+      animation-fill-mode: forwards;
+    }
+}
+
+
+@keyframes revealHeader {
+    
+    from {
+      
+    }
+
+    to {
+        background: rgba(255,255,255, 0.95);
+        box-shadow: 0px 1px 10px 0px lightgray;
+    }
+
+}

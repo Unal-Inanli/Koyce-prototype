@@ -1,0 +1,26 @@
+
+//Variables
+@import "./sass/variables/variables";
+
+//Globals
+@import "./sass/global/_global.scss";
+
+//Mixins
+@import "./sass/mixins/mixins";
+
+//Typography
+
+//Components
+@import "./sass/components/nav-btn";
+@import "./sass/components/logo";
+@import "./sass/components/hero";
+@import "./sass/components/header";
+@import "./sass/components/nav";
+@import "./sass/components/cta";
+@import "./sass/components/block";
+@import "./sass/components/footer";
+@import "./sass/components/info";
+@import "./sass/components/animation";
+//Utility
+@import "./sass/utility/utility";
+
