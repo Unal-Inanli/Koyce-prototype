@@ -1,0 +1,40 @@
+
+.gallery {
+
+    width: 100%;
+    margin-bottom: 5rem;
+   height: auto;
+   display: flex;
+   align-items: center;
+   flex-flow: column;
+   
+   div {
+       width: 90%;
+   }
+}
+
+.grid-size {
+    width: 31%;
+}
+.grid-item {
+    width: 31%;
+    margin-bottom: 1rem;
+    object-fit: contain;
+
+    @include for-tablet-max {
+        width: 47%;        
+        padding: 0rem 1rem;
+    }
+
+    @include for-medium-phone-max {
+        width: 100%;        
+        padding: 0rem 1rem;
+    }
+
+ 
+
+}
+
+.loading {
+    display: none;
+}

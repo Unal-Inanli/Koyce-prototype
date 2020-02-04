@@ -1,0 +1,35 @@
+.social-media {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin: 2rem 0rem;
+
+    &-container {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    &-icon {
+        display: flex;
+        justify-content: center;
+        width: 49%;
+        padding: 2rem 0rem;
+
+          svg {
+                fill: $primaryColor;
+                width: 100%;
+                height: auto;
+            }
+       
+            a {
+                width: 30%;
+            }
+    }
+
+    &-seperator {
+        height: 100px;
+        border-color: $primaryColor;
+    }
+}

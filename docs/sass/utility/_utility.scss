@@ -34,6 +34,36 @@
 
 .wrapper {
     max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
+
+
+.generic {
+
+    &-header {
+        color: $primaryColor;
+        position: relative;
+        font-size: 52px;
+        margin-bottom: 5rem;
+
+        @include for-medium-phone-max {
+            font-size: 38px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 35%;
+            height: 2px;
+            background-color: $primaryColor;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &-content {
+        margin: 5rem 0rem;
+    }
 }

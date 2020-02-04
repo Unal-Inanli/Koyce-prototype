@@ -1,0 +1,69 @@
+.form {
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+    @include for-medium-phone-max {
+        padding: 0rem 1.2rem;
+    }
+
+    &-label {
+        color: $primaryColor;
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    &-input {
+        border: none;
+        outline: none;
+        border-bottom: 2px $primaryColor solid;
+        padding: 0.5rem 0rem;
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    &-textarea {
+        width: 100%;
+        border: none;
+        border-bottom: 2px $primaryColor solid;
+        margin-top: 0.5rem;
+        font-size: 1.3rem;
+        outline: none;
+    }
+
+    &-group {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 1rem;
+    }
+
+    &-container {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    &-submit {
+
+        background: none;
+        border-radius: 2rem;
+        padding: 0.4rem 1rem;
+        border-color: $primaryColor;
+        color:$primaryColor;
+        font-weight: 600;
+        font-size: 1.1rem;
+        border-width: 1;
+        outline: none;
+        cursor: pointer;
+
+        &-container {
+            padding: 1rem 0rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+    }
+
+
+}
