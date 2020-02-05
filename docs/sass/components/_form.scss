@@ -4,7 +4,7 @@
     flex-flow: column;
     align-items: center;
     
-    @include for-medium-phone-max {
+    @include for-tablet-max {
         padding: 0rem 1.2rem;
     }
 

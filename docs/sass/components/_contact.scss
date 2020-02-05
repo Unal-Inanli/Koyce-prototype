@@ -1,0 +1,81 @@
+.contact {
+    display: flex;
+    width: 100%;
+
+    @include for-tablet-max {
+        flex-flow: column;
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+
+    
+    &-reverse {
+        flex-flow: row-reverse;
+
+        @include for-tablet-max {
+            flex-flow: column;
+            width: 80%;
+        }
+        
+    }
+
+
+    &-info {
+        display: flex;
+        flex-flow: column;
+        width: 50%;
+        justify-content: center;
+        padding: 0rem 2rem;
+
+        @include for-tablet-max {
+            margin-bottom: 1rem;
+            width: 100%;
+        
+        }
+
+        &-header {
+            color: #4D4D4D;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 3rem;
+                height: 2px;
+                background-color: #4D4D4D;
+                bottom: 0;
+            }
+        }
+
+
+        &-title {
+            color: #4D4D4D;
+            font-weight: bold;
+        }
+
+        &-text {
+            color: #4D4D4D;
+            font-weight: 400;
+        }
+        
+        &-space {
+            padding-bottom: 0.5rem;
+        }
+    }
+
+    &-map {
+        width: 50%;
+
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        @include for-tablet-max {
+            width: 100%!important;
+        }
+    }
+
+
+}
