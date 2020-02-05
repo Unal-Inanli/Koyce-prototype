@@ -9,7 +9,7 @@ function bSync() {
             baseDir: "./src"
             
         },
-        host: "192.168.43.100"
+        host: "192.168.5.8"
     });
 
     gulp.watch(['./src/style.css', './src/**/*.html', './src/**/*.js'], function(done) {

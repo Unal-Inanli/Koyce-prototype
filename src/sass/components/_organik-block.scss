@@ -1,31 +1,60 @@
 .organik-block {
-    display:flex;
+    display: flex;
     flex-flow: row;
 
 
-    &-reversed {
-        flex-flow:row-reverse;
+    @include for-tablet-max {
+        flex-flow: column;
+        align-items: center;
+        margin-bottom: 2rem;
     }
+
+
+    &-reversed {
+        flex-flow: row-reverse;
+
+
+        @include for-tablet-max {
+            flex-flow: column;
+            align-items: center;
+        }
+
+    }
+
     &-icon {
 
-        display:block;width: 90px; height: 90px; border-radius: 50%; background:$primaryColor;
+        display: block;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: $primaryColor;
 
         &-container {
             width: 20%;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include for-medium-phone-max {
+                width: 100%;
+            }
         }
 
     }
 
     &-text {
 
+
+
         &-title {
             margin-bottom: 0rem;
             color: $primaryColor;
             font-size: 1.8rem;
             font-weight: 500;
+
+            @include for-tablet-max {
+                text-align: center;
+            }
         }
 
 
@@ -33,17 +62,40 @@
             width: 75%;
             line-height: 1.5;
             margin-top: 0.5rem;
+
+            @include for-tablet-max {
+                text-align: center;
+            }
+
+            @include for-medium-phone-max {
+                width: 90%;
+            }
         }
 
 
         &-container {
-            width:80%;
+            width: 80%;
+
+            @include for-tablet-max {
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+            }
 
             &-reversed {
                 text-align: right;
-                display:flex;
+                display: flex;
                 flex-flow: column;
                 align-items: flex-end;
+
+
+                @include for-tablet-max {
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+                    text-align: center;
+                }
+
             }
         }
     }

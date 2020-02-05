@@ -29,19 +29,30 @@
             height: auto;
 
             &-container {
-                width: 30%;
+                width: 6%;
+                border-right: 2px solid $primaryColor;
+
+                @include for-tablet-max {
+                    width: 50%;
+                    border-right: none;
+                }
             }
 
         }
 
         &-container {
-            width: 70%;
+            width: 94%;
         }
 
         &-list {
             display: flex;
             flex-flow: row nowrap;
-            justify-content: flex-end;
+            justify-content: flex-start;
+            padding-left: 2rem;
+
+            @include for-tablet-max {
+                padding-left: 3rem;
+            }
 
             &-item {
                 display: flex;
@@ -51,6 +62,43 @@
                 padding-right: 2rem;
             }
 
+        }
+
+        &-contact {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            margin-left: auto;
+
+            @include for-tablet-max {
+                margin-left: 0;
+                margin-top: 2rem;
+            }
+
+            &-button {
+                margin-right: 1.5rem;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 36px;
+                    height: 36px;
+                    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.16);
+                    background: white;
+                }
+
+            }
+
+            &-text {
+                color: $primaryColor;
+                font-weight: 500;
+                font-size: 1.2rem;
+
+                @include for-medium-phone-max {
+                    font-size: 1rem;
+                }
+            }
         }
 
         &-link {
@@ -87,6 +135,7 @@
         &-close-button {
             @include for-tablet-max {
                 padding: 2rem 2rem;
+                padding-left: 0;
                 cursor: pointer;
                 font-size: 1.5rem;
             }
@@ -105,7 +154,7 @@
              
             @include for-tablet-max {
               flex-flow: column;
-              align-items: center;
+              align-items: flex-start;
               justify-content: flex-start;
               border-left: 2px $primaryColor solid;
               position: fixed;
@@ -116,6 +165,10 @@
               width: 60vw;
               display:none;
               overflow-y: scroll;
+            }
+
+            @include for-medium-phone-max {
+                width: 75vw;
             }
 
             &-open {
