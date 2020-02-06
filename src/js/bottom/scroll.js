@@ -9,12 +9,14 @@ export default function () {
         var windowPos = simpleBar.getScrollElement().scrollTop;
         if (windowPos >= heroHeight && passed === false) {
             $('.header').addClass('header-reveal');
+            $('.header').removeClass('header-hide');
             passed = true;
             returned = false;
         } else if (windowPos <= heroHeight && returned === false) {
             passed = false;
             returned = true;
             $('.header').removeClass('header-reveal');
+            $('.header').addClass('header-hide');
         }
     })
 }

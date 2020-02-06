@@ -1,24 +1,50 @@
 .header {
     position: relative;
     z-index: 2;
-    
+    visibility: hidden;
+    opacity: 0;
+
     &-reveal {
       animation-name: revealHeader;
       animation-duration: 0.4s;
       animation-fill-mode: forwards;
+    }
+
+    &-hide {
+        animation-name: hideHeader;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
     }
 }
 
 
 @keyframes revealHeader {
     
-    from {
+    from {  
       
     }
 
     to {
+        visibility: visible;
+        opacity: 1;
         background: rgba(255,255,255, 0.95);
         box-shadow: 0px 1px 10px 0px lightgray;
     }
+
+}
+
+
+
+@keyframes hideHeader {
+
+   from{
+       opacity: 1;
+       visibility: visible;
+   }
+
+   to{ 
+       visibility: hidden;
+       opacity: 0;
+   }
 
 }
