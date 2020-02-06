@@ -12,6 +12,14 @@
     &-with-text {
         width: 100%;
         text-align: center;
+
+        &-primary {
+            background: $primaryColor;
+        }
+
+        &-big {
+            padding: 10rem 0rem;
+        }
     }
 
     &-for-big-screens {
@@ -55,9 +63,15 @@
     &-paragraph {
         padding: 0rem 2rem;
         line-height: 1.5;
+        color: #4D4D4D;
 
         @include for-desktop {
             width: 65%;
+            font-size: 1.2rem;
+        }
+
+        &-white {
+            color: white;
         }
     }
 

@@ -44,6 +44,10 @@
     &-hero-text {
         color: $primaryColor;
         font-size: 102px;
+
+        @include for-medium-phone-max {
+            font-size: 52px;
+        }
     }
 
     &-header {
@@ -73,6 +77,8 @@
     }
 
     &-content {
-        margin: 5rem 0rem;
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+        min-height: 70vh;
     }
 }

@@ -19,7 +19,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #748945;
+  color: #94A470;
 }
 
 .nav-button {
@@ -211,7 +211,7 @@ a {
 
 .nav-desktop-logo-container {
   width: 6%;
-  border-right: 2px solid #748945;
+  border-right: 2px solid #94A470;
 }
 
 @media (max-width: 1024px) {
@@ -297,7 +297,7 @@ a {
 }
 
 .nav-desktop-contact-text {
-  color: #748945;
+  color: #94A470;
   font-weight: 500;
   font-size: 1.2rem;
 }
@@ -315,7 +315,7 @@ a {
 
 .nav-desktop-link-underline {
   width: 50px;
-  border: 1px #748945 solid;
+  border: 1px #94A470 solid;
   margin-top: 0.5rem;
 }
 
@@ -351,7 +351,7 @@ a {
     flex-flow: column;
     align-items: flex-start;
     justify-content: flex-start;
-    border-left: 2px #748945 solid;
+    border-left: 2px #94A470 solid;
     position: fixed;
     top: 0;
     right: 0;
@@ -450,7 +450,7 @@ a {
 }
 
 .block-modal-button {
-  color: #748945;
+  color: #94A470;
   cursor: pointer;
 }
 
@@ -463,6 +463,14 @@ a {
 .block-with-text {
   width: 100%;
   text-align: center;
+}
+
+.block-with-text-primary {
+  background: #94A470;
+}
+
+.block-with-text-big {
+  padding: 10rem 0rem;
 }
 
 .block-for-big-screens {
@@ -487,7 +495,7 @@ a {
 
 .block-header {
   text-align: center;
-  color: #748945;
+  color: #94A470;
 }
 
 .block-header-spacing {
@@ -503,12 +511,18 @@ a {
 .block-paragraph {
   padding: 0rem 2rem;
   line-height: 1.5;
+  color: #4D4D4D;
 }
 
 @media (min-width: 1024px) {
   .block-paragraph {
     width: 65%;
+    font-size: 1.2rem;
   }
+}
+
+.block-paragraph-white {
+  color: white;
 }
 
 .block-spacing {
@@ -757,7 +771,7 @@ a {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background: #748945;
+  background: #94A470;
 }
 
 .organik-block-icon-container {
@@ -775,7 +789,7 @@ a {
 
 .organik-block-text-title {
   margin-bottom: 0rem;
-  color: #748945;
+  color: #94A470;
   font-size: 1.8rem;
   font-weight: 500;
 }
@@ -836,6 +850,7 @@ a {
   display: flex;
   align-items: center;
   flex-flow: column;
+  justify-content: center;
   margin: 2rem 0rem;
 }
 
@@ -854,7 +869,7 @@ a {
 }
 
 .social-media-icon svg {
-  fill: #748945;
+  fill: #94A470;
   width: 100%;
   height: auto;
 }
@@ -865,13 +880,14 @@ a {
 
 .social-media-seperator {
   height: 100px;
-  border-color: #748945;
+  border-color: #94A470;
 }
 
 .form {
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1024px) {
@@ -881,7 +897,7 @@ a {
 }
 
 .form-label {
-  color: #748945;
+  color: #94A470;
   font-size: 1.1rem;
   width: 100%;
 }
@@ -889,7 +905,7 @@ a {
 .form-input {
   border: none;
   outline: none;
-  border-bottom: 2px #748945 solid;
+  border-bottom: 2px #94A470 solid;
   padding: 0.5rem 0rem;
   font-size: 1.3rem;
   width: 100%;
@@ -898,7 +914,7 @@ a {
 .form-textarea {
   width: 100%;
   border: none;
-  border-bottom: 2px #748945 solid;
+  border-bottom: 2px #94A470 solid;
   margin-top: 0.5rem;
   font-size: 1.3rem;
   outline: none;
@@ -919,8 +935,8 @@ a {
   background: none;
   border-radius: 2rem;
   padding: 0.4rem 1rem;
-  border-color: #748945;
-  color: #748945;
+  border-color: #94A470;
+  color: #94A470;
   font-weight: 600;
   font-size: 1.1rem;
   border-width: 1;
@@ -1059,7 +1075,7 @@ a {
 }
 
 .certificates {
-  background-color: #748945;
+  background-color: #94A470;
   flex-flow: column;
   display: flex;
   align-items: center;
@@ -1198,13 +1214,13 @@ a {
 
 @media (max-width: 1024px) {
   .sub-menu-item {
-    border-left: 2px #748945 solid;
+    border-left: 2px #94A470 solid;
     margin-bottom: 0.3rem;
   }
 }
 
 .sub-menu-item:hover {
-  background: #748945;
+  background: #94A470;
 }
 
 .sub-menu-item:hover a {
@@ -1250,12 +1266,18 @@ a {
 }
 
 .generic-hero-text {
-  color: #748945;
+  color: #94A470;
   font-size: 102px;
 }
 
+@media (max-width: 420px) {
+  .generic-hero-text {
+    font-size: 52px;
+  }
+}
+
 .generic-header {
-  color: #748945;
+  color: #94A470;
   position: relative;
   font-size: 52px;
   margin-bottom: 5rem;
@@ -1272,7 +1294,7 @@ a {
   position: absolute;
   width: 35%;
   height: 2px;
-  background-color: #748945;
+  background-color: #94A470;
   bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
@@ -1283,5 +1305,7 @@ a {
 }
 
 .generic-content {
-  margin: 5rem 0rem;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+  min-height: 70vh;
 }
