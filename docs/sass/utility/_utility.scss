@@ -41,6 +41,11 @@
 
 .generic {
 
+    &-hero-text {
+        color: $primaryColor;
+        font-size: 102px;
+    }
+
     &-header {
         color: $primaryColor;
         position: relative;

@@ -5,30 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
     <title>Protoype for - X</title>
     <script type="module" src="./indexTop.js"></script>
 </head>
 
-<body>
-    <header class="nav flex flex-row flex-a-center flex-j-between nav-wrapper">
+<body data-simplebar>
+  
+    <header class=" header nav flex flex-row flex-j-between nav-wrapper">
         <div class="nav-desktop-logo-container nav-tablet-logo-container">
             <img class="nav-desktop-logo nav-tablet-logo" src="./assets/logos/koyce_logo_primary.svg" alt="">
         </div>
-
+        <div class="nav-cover nav-cover-closed"></div>
         <div class="nav-desktop-container nav-tablet-container">
             <nav class="nav-desktop nav-tablet">
                 <ul class="nav-desktop-list nav-tablet-list">
                     <div class="nav-tablet-close-button-container">
                         <span class="nav-tablet-close-button">X</span>
                     </div>
-                    <li class="nav-desktop-list-item nav-tablet-list-item">
-                        <a class="nav-desktop-link" href="#">Anasayfa</a>
+
+                    <li class="nav-desktop-list-item nav-tablet-list-item"><a href="#" class="nav-desktop-link">Anasayfa
+                            v</a>
+                        <ul class="sub-menu">
+                            <div class="sub-menu-container">
+                                <li class="sub-menu-item"><a href="#">Sub Menu Item</a></li>
+                                <li class="sub-menu-item"><a href="#">Sub Menu Item</a></li>
+                                <li class="sub-menu-item"><a href="#">Sub Menu Item</a></li>
+                                <li class="sub-menu-item"><a href="#">Sub Menu Item</a></li>
+                            </div>
+                        </ul>
                     </li>
-                    <li class="nav-desktop-list-item nav-tablet-list-item"><a href="#" class="nav-desktop-link">Hikayemiz</a></li>
-                    <li class="nav-desktop-list-item nav-tablet-list-item"><a href="#" class="nav-desktop-link">Urunlerimiz</a></li>
-                    <li class="nav-desktop-list-item nav-tablet-list-item"><a href="#" class="nav-desktop-link">Satis Noktalarimiz</a></li>
-                    <li class="nav-desktop-list-item nav-tablet-list-item"><a href="#" class="nav-desktop-link">Bize Ulasin</a></li>
+                    <li class="nav-desktop-list-item nav-tablet-list-item"><a class="nav-desktop-link" href="./gallery.html">Gallery</a></li>
+                    <li class="nav-desktop-list-item nav-tablet-list-item"><a class="nav-desktop-link" href="./ciftligimiz.html">Ciftligimiz</a></li>
+                 
+
+                    <div class="nav-desktop-contact">
+                        <div class="nav-desktop-contact-button">
+                            <a href="tel:+905338209918"><img src="./assets/icons/phone.svg" alt=""></a>
+                        </div>
+                        <span class="nav-desktop-contact-text">+905338209918</span>
+                    </div>
                 </ul>
                 <div class="nav-tablet-menu-icon-container">
                     <img class="nav-tablet-menu-icon" src="./assets/icons/menu_primary.svg" alt="">
@@ -37,12 +55,45 @@
         </div>
     </header>
 
-    <section class="hero">
-       
+
+    <section class="hero hero-text">
+       <h1 class="generic-hero-text">Galeri</h1>
+       <div class="hero-cta-container">
+   
+        <a href="#content" class="cta">
+            <img src="./assets/icons/arrow_down_primary.svg" alt="">
+        </a>
+    </div>
     </section> 
 
     <main id="content">
+        <div class="flex flex-col flex-a-center" style="margin: 5rem 0rem;">
+            <div class="gallery">
+                <div style="display:flex; justify-content:space-between;">
+                    <img class="grid-item"
+                        src="https://images.unsplash.com/photo-1558981396-5fcf84bdf14d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                        alt="">
 
+                    <img class="grid-item"
+                        src="https://images.unsplash.com/photo-1580715201266-c1474931ff26?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=609&q=80"
+                        alt="">
+
+                    <img class="grid-item"
+                        src="https://images.unsplash.com/photo-1580457957055-00449503da64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
+                        alt="">
+                    <img class="grid-item"
+                        src="https://images.unsplash.com/photo-1580732410924-ecf442a89867?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                        alt="">
+                    <img class="grid-item"
+                        src="https://images.unsplash.com/photo-1558981396-5fcf84bdf14d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                        alt="">
+
+                    <img class="grid-item"
+                        src="https://images.unsplash.com/photo-1558981396-5fcf84bdf14d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                        alt="">
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -54,6 +105,9 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <script type="module" src="./indexBottom.js"></script>
 </body>
 

@@ -3,4 +3,32 @@
     flex-flow: column;
     display: flex;
     align-items: center;
+    padding: 2rem 0rem;
+    padding-bottom: 5rem;
+
+    &-container {
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        padding: 0rem 2rem;
+        justify-content: space-between;
+    }
+
+
+    &-item {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 30%;
+    }
+
+    &-logo {
+        width: 50%;
+        object-fit: contain;
+    }
+
+    &-date {
+        color: white;
+        padding: 1rem 0rem;
+    }
 }

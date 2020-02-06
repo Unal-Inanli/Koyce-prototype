@@ -1,6 +1,6 @@
-import * as animation from "./js/bottom/trackAnimation.js";
+// import * as animation from "./js/bottom/trackAnimation.js";
 
-animation.animateBlocks();
+// animation.animateBlocks();
 
 document.addEventListener("DOMContentLoaded", ready);
 

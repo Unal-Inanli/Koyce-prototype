@@ -1,0 +1,40 @@
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    padding-top: 2rem;
+    width: 200px;
+
+    @include for-tablet-max {
+        position: static;
+        padding-top: 1rem;
+        top: 0;
+    }
+
+    &-container {
+        box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.32);
+        display: flex;
+        flex-flow: column;
+
+        @include for-tablet-max {
+            box-shadow: none;
+        }
+    }
+
+    &-item {
+        padding: 0.4rem 1rem;
+        background: white;
+
+        @include for-tablet-max {
+            border-left: 2px $primaryColor solid;
+            margin-bottom: 0.3rem;
+        }
+
+        &:hover {
+            background: $primaryColor;
+            a {
+                color: white;
+            }
+        }
+    }
+}

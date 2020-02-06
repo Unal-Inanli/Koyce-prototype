@@ -60,6 +60,28 @@
                 align-items: center;
                 padding-top: 1rem;
                 padding-right: 2rem;
+                position: relative;
+                
+                @include for-tablet-max {
+                    position: static;
+                    width: 100%;
+                    display: flex;
+                    flex-flow: column;
+                    align-items: flex-start;
+                }
+
+                &:hover {
+
+                    .sub-menu {
+                        display: block;
+
+                        
+                        @include for-tablet-max {
+                            display: flex;
+                            height: auto;
+                        }
+                    }
+                }
             }
 
         }
@@ -179,7 +201,7 @@
               height: 50px;
               @include for-tablet-max {
                 padding-right: 0rem;
-
+                height: auto;
               }
             }
         }
